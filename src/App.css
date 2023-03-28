@@ -1,0 +1,170 @@
+#root {
+
+  
+  box-sizing: border-box;
+  
+ }
+
+body{
+  margin: 0 auto;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.App {
+  display: flex;
+  text-align: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.App h1 {
+  width: 200px;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 0;
+  text-shadow: 0.20em 0.20em 0.04em #5e83b3;
+  color: white;
+}
+
+.App  .card{
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 375px;
+  justify-content:space-between;
+  align-items:center ;
+ 
+}
+
+.App .card .phraseElements{
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(10px 10px 5px rgb(128, 139, 149));
+   
+}
+
+.App .card .show-phrase{
+  background-color: white; 
+  display: flex;
+  color: black;
+  height:120px;
+  width: 356px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+
+
+
+.App .card .show-phrase > p{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+  color:rgb(108, 117, 125);
+  position: relative;
+}
+
+.bxs-quote-alt-right{
+  color: rgb(108, 117, 125);
+  position:absolute;
+  bottom: 60px;
+  right: 10px;
+  width: 50px;
+  font-size: 2rem;
+
+}
+
+
+.svgWave path{
+  fill: white;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 650;
+  color:rgb(110, 99, 118);
+  width: 180px;
+  background-color: #b0e2f4;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: white;
+  opacity: .75;
+  }
+
+button:hover {
+  border-color: #646cff;
+}
+
+.show-author{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:rgb(110, 99, 118);
+  background-color: white;
+  width: 160px;
+  height: 62px;
+  text-align: center;
+  border-radius: 8px;
+  opacity: .75;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #b0e2f4;
+}
+
+@media (min-width: 768px) {
+  .App  .card{
+    
+    height: 800px;
+    
+  }
+
+  .App .card .show-phrase{
+   
+    height:120px;
+    width: 550px;
+   
+  }
+
+  .bxs-quote-alt-right{
+        
+    bottom: 85px;
+    right: 15px;
+    width: 50px;
+    font-size: 3rem;
+  }
+
+  .App h1 {
+    width: 300px;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0;
+    text-shadow: 0.20em 0.20em 0.04em #5e83b3;
+    color: white;
+  }
+}
